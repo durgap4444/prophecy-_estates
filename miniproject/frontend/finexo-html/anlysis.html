@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="cs.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="logo.jpg">
+                    <img src="logo.jpg" alt="Icon" width="90" height="90"> Profecy_estates
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">Profecy_estates</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="dashboard.html">HOME</a></li>
+                    <li>
+                        <a>Analysis</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="#">Price value estimator</a></li>
+                            <li><a href="#">Login Forms</a></li>
+                            <li><a href="#">Card Design</a></li>
+                            <li class="more">
+                                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="">Neumorphism</a></li>
+                                    <li><a href="#">Pre-loader</a></li>
+                                    <li><a href="#">Glassmorphism</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">JAVASCRIPT</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Dynamic Clock</a></li>
+                            <li><a href="#">Form Validation</a></li>
+                            <li><a href="#">Card Slider</a></li>
+                            <li><a href="#">Complete Website</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="anlysis.html">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <div class="img">
+    </div>
+    <div class="formt">
+        <form class="form">
+            <h2>Area (Square Feet)</h2>
+            <input class="area floatLabel" type="text" id="uiSqft" name="Squareft" value="1000">
+            <h2>BHK</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bhk-1" class="uiBHK" name="uiBHK" value="1" />
+                <label for="radio-bhk-1">1</label>
+                <input type="radio" id="radio-bhk-2" class="uiBHK" name="uiBHK" value="2" checked />
+                <label for="radio-bhk-2">2</label>
+                <input type="radio" id="radio-bhk-3" class="uiBHK" name="uiBHK" value="3" />
+                <label for="radio-bhk-3">3</label>
+                <input type="radio" id="radio-bhk-4" class="uiBHK" name="uiBHK" value="4" />
+                <label for="radio-bhk-4">4</label>
+                <input type="radio" id="radio-bhk-5" class="uiBHK" name="uiBHK" value="5" />
+                <label for="radio-bhk-5">5</label>
+            </div>
+        </form>
+        <form class="form">
+            <h2>Bath</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                <label for="radio-bath-1">1</label>
+                <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked />
+                <label for="radio-bath-2">2</label>
+                <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+                <label for="radio-bath-3">3</label>
+                <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                <label for="radio-bath-4">4</label>
+                <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                <label for="radio-bath-5">5</label>
+            </div>
+            <h2>Location</h2>
+            <div>
+                <select class="location" name="" id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Guntur</option>
+                <option>Vijayawada</option>
+            </select>
+            </div>
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+            <div id="uiEstimatedPrice" class="result">
+                <h2></h2>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
